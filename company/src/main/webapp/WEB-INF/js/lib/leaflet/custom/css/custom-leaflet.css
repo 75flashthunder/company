@@ -1,0 +1,355 @@
+.leaflet-platoon-status-back{
+	background: url("../image/ACC_mark.png") no-repeat scroll left bottom rgba(0, 0, 0, 0);
+    width: 120px;
+    height: 137px;
+    color: #fff;
+    font-size: 13px;
+}
+
+
+.leaflet-control-back{
+	background: url("../image/center-back.png") no-repeat scroll left bottom rgba(0, 0, 0, 0);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/********************* bottom platoon-info  *********************/
+.leaflet-platoon-info{
+/* 	background: url("../image/back.png") no-repeat scroll left bottom rgba(0, 0, 0, 0); */
+    height: 77px;
+}
+
+.leaflet-platoon-info-area{
+	margin-left: 280px !important;
+    margin-bottom: 3px !important;
+}
+
+.leaflet-progressBar{
+   position: relative;
+   width: 100%;
+   height: 2px;
+   background-color: #dadada;
+   margin-top: 7px;
+   max-width: 100%;
+}
+.leaflet-timeBar{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 0;
+   height: 100%;
+   background-color: #4285f4;
+   max-width: 100%;
+}
+.leaflet-timeIcon{
+    float: right;
+    margin-top: -6px;
+    margin-right: -13px;
+}
+
+/* .leaflet-bufferBar {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 0;
+   height: 100%;
+   background-color: #9f9f9f;
+} */
+
+
+
+
+/********************* left platoon-vehicle  *********************/
+.leaflet-platoon-vehicle-area{
+	margin-left: 0px !important;
+    margin-top: 0px !important;
+    display: none;
+}
+
+.leaflet-platoon-vehicle-running-back{
+	background: url("../image/back_running_line.gif") repeat-y;
+    width: 266px;
+    height: 100%;
+}
+
+.leaflet-platoon-vehicle-stop-back{
+	background: url("../image/back_stop_line.png") repeat-y;
+    width: 266px;
+    height: 100%;
+}
+
+
+.leaflet-platoon-vehicle-truck-L{
+	background: url("../image/truck.png") no-repeat center center;
+	width: 100%; 
+	height: 102px;
+}
+.leaflet-platoon-vehicle-truck-L-selected{
+	background: url("../image/truck_selected.png") no-repeat center center;
+	width: 100%; 
+	height: 102px;
+}
+.leaflet-platoon-vehicle-truck-M{
+	background: url("../image/truck_yellow.png") no-repeat center center;
+	width: 100%; 
+	height: 102px;
+}
+.leaflet-platoon-vehicle-truck-M-selected{
+	background: url("../image/truck_yellow_selected.png") no-repeat center center;
+	width: 100%; 
+	height: 102px;
+}
+.leaflet-platoon-vehicle-truck-H{
+	background: url("../image/truck_red.png") no-repeat center center;
+	width: 100%; 
+	height: 102px;
+}
+.leaflet-platoon-vehicle-truck-H-selected{
+	background: url("../image/truck_red_selected.png") no-repeat center center;
+	width: 100%; 
+	height: 102px;
+}
+.leaflet-platoon-vehicle-truck-no{
+	padding-top: 40px;
+}
+.leaflet-platoon-vehicle-model{
+	padding-top: 16px;
+	display: none;
+}
+.leaflet-platoon-vehicle-truck-left{
+	width: 110px; 
+	height: 100%; 
+	float: left;
+}
+
+.leaflet-platoon-vehicle-truck-center{
+	width: 45px;
+	height: 102px;
+	float: left;
+	cursor: pointer;
+    text-align: center;
+}
+
+.leaflet-platoon-vehicle-truck-right{
+	float: left; 
+}
+
+
+.leaflet-platoon-vehicle-abnormal-H{
+	margin-top: 10px;
+	background-color: #fff;
+	width: 100%; 
+	height: 80px;
+	border: 2px solid #fd0000;
+}
+.leaflet-platoon-vehicle-abnormal-M{
+	margin-top: 10px;
+	background-color: #fff;
+	width: 100%; 
+	height: 80px;
+	border: 2px solid #FFAE00;
+}
+.leaflet-platoon-vehicle-abnormal-L{
+	margin-top: 10px;
+	background-color: #fff;
+	width: 100%; 
+	height: 80px;
+	border: 2px solid #027FFF;
+}
+.leaflet-platoon-vehicle-abnormal-null{
+	margin-top: 10px;
+	background-color: #fff;
+	width: 100%; 
+	height: 80px;
+	border: 2px solid #fff;
+}
+.leaflet-platoon-vehicle-abnormal-color-H{
+	width: 95%;
+	margin: 0 auto;
+	word-wrap:break-word;
+	color: #fd0000;
+}
+.leaflet-platoon-vehicle-abnormal-color-M{
+	width: 95%;
+	margin: 0 auto;
+	word-wrap:break-word;
+	color: #FFAE00;
+}
+.leaflet-platoon-vehicle-abnormal-color-L{
+	width: 95%;
+	margin: 0 auto;
+	word-wrap:break-word;
+	color: #027FFF;
+}
+.leaflet-platoon-vehicle-abnormal-time-color-H{
+	margin-left: 10px;margin-top: 3px;
+	color: #fd0000;
+}
+.leaflet-platoon-vehicle-abnormal-time-color-M{
+	margin-left: 10px;margin-top: 3px;
+	color: #FFAE00;
+}
+.leaflet-platoon-vehicle-abnormal-time-color-L{
+	margin-left: 10px;margin-top: 3px;
+	color: #027FFF;
+}
+
+.leaflet-v2v-icon{
+	width:30px; 
+	height: 32px; 
+	margin-left: 5px;
+}
+.leaflet-gnss-icon{
+	width:30px; 
+	height: 32px; 
+	margin-left: 10px;
+}
+.leaflet-v2i-icon{
+	width:30px; 
+	height: 32px; 
+	margin-left: 10px;
+}
+.leaflet-camera-icon{
+	width:29px; 
+	height: 17px; 
+	margin-left: 5px;
+	cursor: pointer;
+}
+.leaflet-fuel-icon{
+	width:19px; 
+	height: 19px; 
+	margin-left: 18px;
+}
+
+.leaflet-platoon-vehicle-obstacle{
+	width: 50px; 
+	height: 100%; 
+	margin-left: 120px; 
+	float: left;
+}
+.leaflet-platoon-vehicle-obstacle-distance{
+	margin-left:1px;
+}
+
+.leaflet-platoon-vehicle-cutincar-left{
+	width:100px; 
+	height:100%; 
+	float: left; 
+	padding-top: 5px; 
+	padding-left: 25px; 
+}
+.leaflet-platoon-vehicle-cutincar-center{
+	width: 75px; 
+	height:100%; 
+	float: left;
+}
+.leaflet-platoon-vehicle-cutincar-right{
+	width:80px; 
+	height:100%; 
+	float: left;
+	padding-top: 5px; 
+	padding-left: 0px; 
+}
+
+.leaflet-platoon-vehicle-error-value-box-L{
+	width: 80px;
+	height: 20px;
+	border: 1px solid #F4F4F4; 
+	margin-top: 9px;
+	margin-left: 3px;
+	color: #F4F4F4;
+}
+
+.leaflet-platoon-vehicle-error-value-box-M{
+	width: 80px;
+	height: 20px;
+	border: 1px solid #FFAE00; 
+	margin-top: 9px;
+	margin-left: 3px;
+	color: #FFAE00;
+}
+
+.leaflet-platoon-vehicle-error-value-box-H{
+	width: 80px;
+	height: 20px;
+	border: 1px solid #fd0000; 
+	margin-top: 9px;
+	margin-left: 3px;
+	color: #fd0000;
+}
+
+.leaflet-platoon-vehicle-color-L{
+	color: #F4F4F4;
+}
+.leaflet-platoon-vehicle-color-M{
+	color: #FFAE00;
+}
+.leaflet-platoon-vehicle-color-H{
+	color: #fd0000;
+}
+
+
+.leaflet-popup-tip-container {
+    height: 36px;
+    right: 0px; 
+    bottom:-35px;
+    width:13px;
+    position: absolute;
+}
+
+.leaflet-popup-tip {
+    background: url("../image/arrow_bottom.png") no-repeat scroll left bottom rgba(0, 0, 0, 0);
+    width: 13px;
+    height: 36px;
+    margin: 0 auto 0;
+    padding: 0;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0);
+    -webkit-transform: none;
+	-moz-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform:none;
+}
+
+.leaflet-popup-content-wrapper {
+	font-family:Lucida Grande,​Lucida Sans,​Arial,​sans-serif;
+	color:#362B36;
+	font-size: 13px;
+	background: none repeat scroll 0 0 rgba(250, 250, 250, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45);
+	border-radius:0px;
+    padding: 1px;
+    text-align: left;
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+    background: url("../image/close_icon.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    border: medium none;
+    padding: 0 0 0 0;
+    height: 21px;
+    width: 20px;
+    right: 6px;
+    color: rgba(0, 0, 0, 0);
+    top: 6px;
+}
+
+.leaflet-container a.leaflet-popup-close-button:hover {
+    color: rgba(0, 0, 0, 0);
+}
+
+.leaflet-popup-content p {
+    margin: 15px 0;
+}
+
+.leaflet-popup-content{
+	margin: 0;
+	width: 270px;
+}
+
+.leaflet-popup-title{
+	background-color: black;
+    height: 30px;
+    color: #fff;
+}

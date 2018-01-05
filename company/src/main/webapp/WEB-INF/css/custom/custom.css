@@ -1,0 +1,43 @@
+#layout-main{
+	width:90%;
+	left:5%;
+	float:left;
+	position:relative;
+}
+#usermessage thead{
+	background-color:#404040;
+	color: white;
+}
+.table-left{
+	position: relative;
+	float: left;
+}
+.table-right{
+	position: relative;
+	float: left;
+}
+.search{	
+	width: 100%;
+	position: relative;
+    line-height: 40px;
+    left:15px;   
+}  
+#conditionTable input{
+	padding:0px !important;
+	height: 25px;
+	margin-top: 2px;
+	width:122px;
+}
+#conditionTable input{
+	height: 25px;
+	margin-top: 2px;
+}
+.input-width{
+	width:140px !important;
+}
+#conditionTable select{
+	padding:0px !important;
+	height: 25px;
+	margin-top: 2px;
+	width:122px;
+}

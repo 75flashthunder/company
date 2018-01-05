@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="web.dao.GetCustomDao">
+	<resultMap type="web.vo.Custom" id="Custom">
+		<result property="customId" column="id" />
+		<result property="customName" column="customer_name" />
+		<result property="customCode" column="customer_code" />
+		<result property="company" column="company" />
+		<result property="customEmail" column="customer_email" />
+		<result property="phoneNumber" column="phone_number" />
+		<result property="tradeDate" column="trade_date" />
+	</resultMap>	
+	
+	<select id="getcustomlist" 
+		resultType="Custom">
+		SELECT  id id,
+				customer_name customer_name,
+				customer_code customer_code,
+				company company,
+				customer_email customer_email,
+				phone_number phone_number,
+				trade_date trade_date				
+		FROM tb_customer				
+	</select>
+</mapper>

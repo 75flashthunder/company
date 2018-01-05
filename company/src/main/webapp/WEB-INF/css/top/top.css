@@ -1,0 +1,28 @@
+.poilogin{
+	width:300px;
+	height:100%;
+	float:left;
+}
+#poilogin{
+	background-color: gray;
+}
+.poicontent{
+	padding:5px;
+}
+.crostyle{
+	text-align:center;
+}
+.search{
+	margin-left: 10px;
+}
+.mapstyle{
+	float:left;
+	width:auto;
+	height:-webkit-fill-available;
+	border:#ccc solid 1px;
+	font-size:12px
+}
+.poiresulttable{
+	height:400px;
+	width:100%;	
+}

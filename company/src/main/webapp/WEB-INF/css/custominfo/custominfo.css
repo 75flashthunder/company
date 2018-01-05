@@ -1,0 +1,16 @@
+#layout-main{
+	width:90%;
+	left:5%;
+	float:left;
+	position:relative;
+}
+.custom{
+	height: 200px;
+    width: 150px;
+    background-color: gray;
+    font-weight: bold;
+    text-align: center;
+    line-height: 170px;
+    float: left;
+    margin-left: 20px;
+}

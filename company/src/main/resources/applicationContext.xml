@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:p="http://www.springframework.org/schema/p" xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx" 
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd 
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd 
+    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd 
+    http://www.springframework.org/schema/mvc
+    http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+    
+   
+    
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"        
+     destroy-method="close">        
+	    <property name="driverClassName" value="com.mysql.jdbc.Driver" />	           
+	    <property name="url" value="jdbc:mysql://localhost:3306/sys?useSSL=false" />      
+	    <property name="username" value="lilei" />       
+	    <property name="password" value="123456" />       
+	</bean>
+	
+	<!--  SqlSessionFactory  -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="configLocation" value="classpath:spring-mybatis.xml" />
+		<property name="mapperLocations" value="classpath*:web/mybatis/*.xml" />
+	</bean>
+    
+    <!-- 实例化jdbcTemplate,同时注入数据源 -->
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate"
+        p:dataSource-ref="dataSource" />
+        
+    <mvc:annotation-driven />   
+	<mvc:resources location="/WEB-INF/js/" mapping="/js/**"/>
+	<mvc:resources location="/WEB-INF/css/" mapping="/css/**"/>
+	<mvc:resources location="/WEB-INF/images/" mapping="/images/**"/>
+    
+    <!-- 配置事务管理器 -->
+    <bean id="txManager"
+        class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+    
+    <!-- 事务扫描开始(开启@Tranctional) -->
+    <tx:annotation-driven transaction-manager="txManager" />
+    
+    <!-- bean definitions here -->
+    <context:component-scan base-package="web" />
+</beans>
